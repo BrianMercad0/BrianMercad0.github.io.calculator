@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Grid </title>
+    <link rel="stylesheet" href="Calculator.css">
+<script src="Calculator.js"></script>
+</head>
+<body>
+    <div class="calculator">
+      <div class= "formstyle">
+        <form name = "form1">
+        <input class= "textview" name = "textview">
+        </form>
+        <div class="calculatorButtons">
+          <button class="cButtons is-clear" onclick = "form1.textview.value = ' '"> C </button>
+          <button class="cButtons" onclick="insert('/')">&divide;</button>
+          <button class="cButtons" onclick="insert('7')">7</button>
+          <button class="cButtons" onclick="insert('8')">8</button>
+          <button class="cButtons" onclick="insert('9')">9</button>
+          <button class="cButtons" onclick="insert('*')">&times;</button>
+          <button class="cButtons" onclick="insert('4')">4</button>
+          <button class="cButtons" onclick="insert('5')">5</button>
+          <button class="cButtons" onclick="insert('6')">6</button>
+          <button class="cButtons" onclick="insert('-')">&minus;</button>
+          <button class="cButtons" onclick="insert('1')">1</button>
+          <button class="cButtons" onclick="insert('2')">2</button>
+          <button class="cButtons" onclick="insert('3')">3</button>
+          <button class="cButtons" onclick="insert('+')">&plus;</button>
+          <button class="cButtons is-zero" onclick="insert('0')">0</button>
+          <button class="cButtons is-equals" onclick="equal('=')">&equals;</button>
+        </div>
+      </div>
+  </body>
+</html>
